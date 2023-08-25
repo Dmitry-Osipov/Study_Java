@@ -1,6 +1,6 @@
 package Algorithms.Seminar;
 
-public class lesson1 {
+public class seminar1 {
 
     // Написать программу, считывающую сумму от 1 до n. Сложность данного алгоритма O(n).
     public static int findSum(int number) {
