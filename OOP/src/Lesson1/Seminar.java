@@ -116,7 +116,7 @@ class BottleOfWater extends Product {
 }
 
 class VendingMachine {
-    private List<Product> products;
+    protected List<Product> products;
 
     public VendingMachine(List<Product> products) {
         this.products = products;
