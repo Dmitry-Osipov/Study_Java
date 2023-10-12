@@ -1,5 +1,8 @@
 package Homework;
 
+import static Homework.RedBlackNode.BLACK;
+import static Homework.RedBlackNode.RED;
+
 /*
 Домашнее задание:
 Необходимо превратить собранное на семинаре дерево поиска в полноценное левостороннее красно-черное дерево, а также
@@ -29,18 +32,12 @@ public class RedBlackNode {
     public String color;
 
     public RedBlackNode(int value) {
-        if (!(value instanceof Integer)) {
-            throw new IllegalArgumentException("Значение для добавления в красно-чёрное дерево должно быть целочисленным");
-        }
+        throw new IllegalArgumentException("Значение для добавления в красно-чёрное дерево должно быть целочисленным");
 
-        this.value = value;
-        this.left = null;
-        this.right = null;
-        this.color = RED;
     }
 }
 
-public class RedBlackTree {
+class RedBlackTree {
     public RedBlackNode root;
 
     public void insertWithBalance(int value) {
@@ -53,6 +50,10 @@ public class RedBlackTree {
 
     public void traverseInorder() {
         traverseInorderRecursive(root);
+    }
+
+    private void traverseInorderRecursive(RedBlackNode root) {
+
     }
 
     private RedBlackNode insertRecursive(RedBlackNode node, int value) {
