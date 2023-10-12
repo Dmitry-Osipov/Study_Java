@@ -1,4 +1,4 @@
-package Algorithms.Lesson;
+package Lesson;
 
 public class lesson1 {
     public static void main(String[] args) {

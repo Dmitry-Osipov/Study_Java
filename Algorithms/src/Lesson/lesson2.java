@@ -1,4 +1,4 @@
-package Algorithms.Lesson;
+package Lesson;
 
 
 /*

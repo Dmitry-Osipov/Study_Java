@@ -1,4 +1,4 @@
-package Algorithms.Seminar;
+package Seminar;
 
 public class seminar1 {
 
