@@ -1,6 +1,5 @@
 package Lesson1;
 
-import java.net.Socket;
 import java.util.ArrayList;
 
 public class Robot {

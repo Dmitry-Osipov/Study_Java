@@ -5,7 +5,6 @@ import Lesson5.presenters.Model;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
-import java.util.Objects;
 
 public class TableModel implements Model {
     private Collection<Table> tables;

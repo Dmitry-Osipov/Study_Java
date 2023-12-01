@@ -1,6 +1,5 @@
 package Lesson5;
 
-import Lesson5.models.Table;
 import Lesson5.models.TableModel;
 import Lesson5.presenters.BookingPresenter;
 import Lesson5.views.BookingView;
