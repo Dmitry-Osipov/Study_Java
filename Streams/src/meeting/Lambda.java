@@ -3,6 +3,7 @@ package meeting;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Function;
 
 public class Lambda {
     public static void main(String[] args) {
@@ -46,6 +47,12 @@ public class Lambda {
                 .map(student -> student.name)
                 .filter(name -> name == null || name.length() <= 4)
                 .count());
+
+        Consumer<String> consumer = System.out::println;
+        Consumer<String> consumer2 = A::new;  // Здесь идёт референс, как к типу, что и возвращает метод конструктора.
+
+        A a = new A("ololo");
+        Function<A, String> f = A::getA;
     }
 
     @FunctionalInterface  // Функциональный интерфейс содержит в себе лишь 1 объявленный метод.
@@ -66,5 +73,13 @@ public class Lambda {
             this.age = age;
             this.name = name;
         }
+    }
+
+    static class A {
+        final String a;
+
+        public A(String a) { this.a = a; }
+
+        public String getA() { return a; }
     }
 }
